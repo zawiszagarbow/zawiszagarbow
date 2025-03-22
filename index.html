@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>GPO Garbów</title>
+</head>
+
+<body>
+<div class="nav1">
+	<p><img src="https://scontent-waw2-1.xx.fbcdn.net/v/t1.15752-9/418531658_962972775423133_5738619272532630595_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=108&ccb=1-7&_nc_sid=b70caf&_nc_ohc=c_P9jQ23G68Q7kNvgFa5Z4l&_nc_oc=AdmW0g8kd8TQToKuvww764dciDJd9n3YJXbYir6Xof9Z5f2ep3Pkq-5paouhQdNSut0&_nc_zt=23&_nc_ht=scontent-waw2-1.xx&oh=03_Q7cD1wGsoW9sn5_jrHS3rzWu4AbZlPXT3ssGk4KNb57oEmtLrg&oe=6803EF89" class="logo1"><span style="font-size: 30px;">Strona Główna</span>&nbsp;<span style="font-size: 30px;">Wiadomości</span> &nbsp;<span style="font-size: 30px;">Zawodnicy</span> &nbsp; <span style="font-size: 30px;">Skład wyjściowy</span> <a href="#socjale"><span style="font-size: 30px;">Socjalmedia</span></a> &nbsp;<span style="font-size: 30px;">Kontakt</span> <span style="font-size: 30px;">Projekty</span></p>
+</div>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<div class="math">
+	<p>Najbliższy mecz:<span id="art" style="border:none; box-shadow: none; background: none; color: yellow;">Zawisza Garbów vs Drużyna X</span></p>
+		<p>Miejsce/Godzina:<span id="art" style="border:none; box-shadow: none; background: none; color: yellow;">Dwikozy - Orlik X 12:00</span></p>
+		<p>Status/Wynik:<span id="art" style="border:none; box-shadow: none; background: none; color:red;">Zakończony (1-1)</span></p>
+		<center><p id="clock" title="Godzina" style="color: fuchsia; font-size: 24px;"></p></center>
+	</div>
+	<p>&nbsp;</p>
+	<div class="math">
+		<h1>Wiadomość dnia</h1>
+		<p>Sensacyjna wygrana naszej drużyny</p>
+		<!--<span style="color:red;">Brak nowych wiadomości</span>-->
+	</div>
+	<P>&nbsp;</P>
+		<div class="math">
+		<h1>Zawodnik meczu</h1>
+		<p><img src=""></p>
+			<p>Brak zawodnika meczu</p>
+		<!--<span style="color:red;">Brak nowych wiadomości</span>-->
+	</div>
+	<p>&nbsp;</p>
+	<div class="math" id="socjale">
+	<h1>Socjalmedia</h1>
+	<p><a href="">Instagram</a></p>
+	<p><a href="">YouTube</a></p>
+		<p><a href="">Facebook</a></p>
+	</div>
+	    <script>
+        function updateClock() {
+            const now = new Date(); // Pobiera bieżącą datę i godzinę
+            const hours = now.getHours().toString().padStart(2, '0'); // Godziny
+            const minutes = now.getMinutes().toString().padStart(2, '0'); // Minuty
+            const seconds = now.getSeconds().toString().padStart(2, '0'); // Sekundy
+
+            // Ustawia czas w formacie HH:MM:SS
+            document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}`;
+        }
+
+        // Uaktualnia zegar co sekundę
+        setInterval(updateClock, 1000);
+
+        // Inicjalizuje zegar natychmiastowo
+        updateClock();
+    </script>
+<style>
+	body{
+		background-image: repeating-radial-gradient(#abcdef,#0A0B0B);
+		
+	}
+	.nav1 , span{
+	font-size: 16px;
+  background-image: linear-gradient(#1C1D1D ,#0A0B0B);
+  border-color: #adb1b8 #a2a6ac #8d9096;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: rgba(255,255,255,.6) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Amazon Ember",Arial,sans-serif;
+  overflow: hidden;
+  text-align: center;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  user-select: none;
+  white-space: nowrap;
+}
+
+span,button:active {
+  border-bottom-color: #a2a6ac;
+}
+
+span,button:active:hover {
+  border-bottom-color: #a2a6ac;
+}
+span,button:hover {
+  border-color: #a2a6ac #979aa1 #82858a;
+}
+
+span , button:focus {
+  border-color: #e77600;
+  box-shadow: rgba(228, 121, 17, .5) 0 0 3px 2px;;
+}body>
+		.nav1{
+			background-image: linear-gradient(#1C1D1D ,#0A0B0B);
+  border-color: orange darkorange red;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(255,255,255,.6) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Amazon Ember",Arial,sans-serif;
+  overflow: hidden;
+  text-align: center;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  user-select: none;
+  white-space: nowrap;
+			width: 100%;
+	}
+	.nav1{
+		position: fixed;
+	}
+	.math{
+		background-color: gray;
+		font-family: arial;
+		width: 50%;
+		border: solid;
+		 box-shadow: rgba(255,255,255,.6) 0 1px 0 inset;
+		border-color: #adb1b8 #a2a6ac #8d9096;
+		background-image: linear-gradient(#1C1D1D ,#0A0B0B);
+		color: white;
+	}
+	.logo1{
+		width:40px;
+		float: left;
+		border-radius: 50%;
+		border: solid #2AFF00;
+	}
+	</style>
+</body>
+</html>
