@@ -63,11 +63,28 @@
         updateClock();
     </script>
 <style>
+	        a {
+            text-decoration: none; /* Usuwa podkreślenie */
+            color: blue;           /* Kolor linków */
+        }
+
+        /* Dodatkowo, aby linki były bardziej wyraziste po najechaniu */
+        a:hover {
+            text-decoration: underline; /* Możesz dodać efekt podkreślenia przy najechaniu */
+            color: black;            /* Zmieniamy kolor na ciemniejszy przy najechaniu */
+        }
 	body{
 		background-image: repeating-radial-gradient(#abcdef,#0A0B0B);
 		
 	}
 	.nav1 , span{
+		 top: 0;           /* Ustawia nawigację na samej górze */
+            left: 0;  
+		 z-index: 99;
+  width: 100%;
+		  justify-content: space-between;
+		 transition: all 0.3s ease;
+		text-decoration: none;
 	font-size: 16px;
   background-image: linear-gradient(#1C1D1D ,#0A0B0B);
   border-color: #adb1b8 #a2a6ac #8d9096;
