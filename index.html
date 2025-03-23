@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>GPO Garbów</title>
-	<link rel="icon" type="image/x-icon" href="dpog-removebg-preview-photoaidcom-2x-ai-zoom.ico">
+	<link rel="icon" type="image/x-icon" href="dpog.ico">
 </head>
 
 <body>
@@ -24,7 +24,7 @@
 		<h1>Wiadomość dnia</h1>
 				<h1>Wiadomość dnia: Czystka w drużynie</h1>
 		<p>Czystka w drużynie zawodnicy którzy "unikają" meczów,treningów oraz są uważani za zbyt słabych zostają usunięci.</p>
-		<p></p>
+		<p><a href="">Zobacz bardziej szczegółowe informacje</a></p>
 	</div>
 	<P>&nbsp;</P>
 		<div class="math">
@@ -157,6 +157,85 @@ span , button:focus {
             left: 0;  
 		 z-index: 99;
 	}
+	/* Ustawienia dla telefonów */
+@media screen and (max-width: 768px) {
+  /* Główne style */
+body {
+    background-color: #121212;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/* Nawigacja */
+.nav1 {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #1C1D1D;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.nav1 p {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 18px;
+}
+
+/* Sekcja treści */
+.math {
+    background: #222;
+    width: 80%;
+    margin: 80px auto 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Logo */
+.logo1 {
+    width: 60px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+/* Linki */
+a {
+    color: #00aaff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsywność */
+@media screen and (max-width: 2000px) {
+    .nav1 p {
+        flex-direction:column;
+		position:absolute;
+        gap: 50px;
+    }
+    .math {
+        width: 50%;
+        padding: 50px;
+    }
+    .logo1 {
+        width: 15px;
+    }
+	span{
+		font-size: 10px;
+		padding: 2px;
+	}
+}
 	</style>
 </body>
 </html>
