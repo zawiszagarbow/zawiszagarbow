@@ -114,12 +114,12 @@ span,button:hover {
 }
 
 span , button:focus {
-  border-color: #e77600;
+  border-color: white;
   box-shadow: rgba(228, 121, 17, .5) 0 0 3px 2px;;
 }body>
 		.nav1{
 			background-image: linear-gradient(#1C1D1D ,#0A0B0B);
-  border-color: orange darkorange red;
+  border-color: white;
   border-style: solid;
   border-width: 2px;
   box-shadow: rgba(255,255,255,.6) 0 1px 0 inset;
@@ -136,6 +136,7 @@ span , button:focus {
 	}
 	.nav1{
 		position: fixed;
+		box-shadow: rgba(228, 121, 17, .5) 0 0 3px 2px;;
 	}
 	.math{
 		background-color: gray;
@@ -148,10 +149,13 @@ span , button:focus {
 		color: white;
 	}
 	.logo1{
-		width:40px;
+		width:70px;
 		float: left;
 		border-radius: 50%;
-		border: solid #2AFF00;
+		border: solid white;
+				 top: 0;           /* Ustawia nawigację na samej górze */
+            left: 0;  
+		 z-index: 99;
 	}
 	</style>
 </body>
